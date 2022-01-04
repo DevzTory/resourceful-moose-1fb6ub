@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FICA_Risk_is_Blank</fullName>
+    <active>false</active>
+    <description>An account cannot be saved if the Date of KYC on file has a value BUT the FICA Risk Profile is blank.</description>
+    <errorConditionFormula>AND( 
+ NOT(ISBLANK(Date_of_KYC_on_file__c)) , 
+  ISBLANK(TEXT(FICA_Rating__c))
+ )</errorConditionFormula>
+    <errorDisplayField>FICA_Rating__c</errorDisplayField>
+    <errorMessage>If Date of KYC on file has a value then FICA Rating cannot be left BLANK.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,12 @@
+<aura:component>
+    <p>Click the button to trigger the controller to throw an unhandled error.</p>
+    <lightning:button label="throw unhandled error" onclick="{!c.throwUnhandledError}"/>
+    <br/>
+    <br/>
+
+
+    <p>Click the button to trigger the controller to throw a handled error.</p>
+    <div aura:id="div1"></div>
+
+    <lightning:button label="Throw handled Error" onclick="{!c.throwHandledError}"/>
+</aura:component>

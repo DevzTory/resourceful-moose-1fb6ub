@@ -1,0 +1,8 @@
+<aura:component>
+    
+    <aura:attribute name="mondayToday" type="boolean" default="true"/>
+    Enter a number: <ui:inputText aura:id="inputCmp"/> <br/>
+    
+    <lightning:button label="Submit" onclick="{!c.doAction}"/> <br/>
+    <lightning:button label="TrueOrFalse" onclick="{!c.doTrueOrFalse}"/>
+</aura:component>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Conference</fullName>
+    <active>true</active>
+    <label>Conference</label>
+    <picklistValues>
+        <picklist>Family</picklist>
+        <values>
+            <fullName>None</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Hotel__c</picklist>
+        <values>
+            <fullName>Peermont D%C2%B4oreale Grande Hotel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Peermont Metcourt Hotel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Peermont Metcourt Inn</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Peermont Metcourt Suites</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Peermont Walmont Hotel</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>QuantityUnitOfMeasure</picklist>
+        <values>
+            <fullName>Each</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Room_Type__c</picklist>
+        <values>
+            <fullName>Classic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deluxe</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

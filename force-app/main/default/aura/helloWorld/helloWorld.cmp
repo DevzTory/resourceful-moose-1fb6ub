@@ -1,0 +1,10 @@
+<!--From Trailhead Lightning Components Basics-->
+<!--From Trailhead Aura Components Basics-->
+<aura:component>
+	  
+    <aura:attribute name="customMessage" type="String" default="Serobanyane"/>
+    
+    <c:helloMessage message="You look nice today."/> <!--Component attribute called message.
+														This attribute is passed to the helloMessage.cmp-->
+	    
+</aura:component>

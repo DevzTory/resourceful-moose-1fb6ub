@@ -1,0 +1,12 @@
+<aura:component controller="LEX_ComponentApexController">
+    <aura:attribute name="accountList" type="List"/>
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    
+    <lightning:select name="select1" label="Select Account">
+        <option value="null">None</option>
+        <aura:iteration items="{!v.accountList}" var="item">
+            <option value="{!item.Id}">{!item.Name}</option>
+        </aura:iteration>
+    </lightning:select>
+</aura:component>

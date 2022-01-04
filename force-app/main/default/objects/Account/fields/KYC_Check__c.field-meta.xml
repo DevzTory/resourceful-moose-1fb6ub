@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>KYC_Check__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(ISBLANK(TEXT(FICA_Rating__c)),Date_of_KYC_on_file__c + 700, 
+ CASE(TEXT(FICA_Rating__c),
+ &#39;Low&#39;, Date_of_KYC_on_file__c + 1066,
+ &#39;Medium&#39;, Date_of_KYC_on_file__c + 700,
+ &#39;High&#39;, Date_of_KYC_on_file__c + 365,
+ null))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Next KYC Check Date</label>
+    <required>false</required>
+    <type>Date</type>
+</CustomField>

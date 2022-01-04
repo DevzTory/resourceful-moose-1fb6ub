@@ -1,0 +1,9 @@
+Hi,
+
+The below discount needs approval.
+
+Name: {!Opportunity.Name}
+Id: {!Opportunity.Id}
+Created Date: {!Opportunity.Name}
+
+Thanks

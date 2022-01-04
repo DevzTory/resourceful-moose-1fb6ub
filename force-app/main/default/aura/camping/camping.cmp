@@ -1,0 +1,5 @@
+<!--From Trailhead Lightning Components Basics-->
+<aura:component >
+    <c:campingHeader/>
+	<c:campingList/>
+</aura:component>

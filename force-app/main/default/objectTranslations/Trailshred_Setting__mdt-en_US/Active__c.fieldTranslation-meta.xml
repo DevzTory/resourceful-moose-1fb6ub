@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Only active settings have their audio played. Deactivate or delete a setting to prevent it from firing when its criteria is met. --></help>
+    <label><!-- Active --></label>
+    <name>Active__c</name>
+</CustomFieldTranslation>

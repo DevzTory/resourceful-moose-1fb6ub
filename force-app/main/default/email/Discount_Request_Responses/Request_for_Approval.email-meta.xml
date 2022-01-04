@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Used to alert approvers of a request for a discount.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Request for Approval</name>
+    <style>none</style>
+    <subject>Request for a discount</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

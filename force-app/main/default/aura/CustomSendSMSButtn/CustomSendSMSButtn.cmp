@@ -1,0 +1,6 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" controller="CustomSendSMSApexContoller">
+	<lightning:button variant="brand"
+                      label="Send SMS"
+                      title="Send SMS"
+                      onclick="{! c.openSendSMS}"/>
+</aura:component>

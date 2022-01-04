@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssignmentRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignmentRule>
+        <fullName>Standard</fullName>
+        <active>true</active>
+        <ruleEntry>
+            <assignedTo>Test_queues</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>US,USA,United States,United States of America</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>robmatete@resourceful-moose-1fb6ub.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>notEqual</operation>
+                <value>US,USA,United States,United States of America</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Test_queues</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.LastName</field>
+                <operation>equals</operation>
+                <value>Tom</value>
+            </criteriaItems>
+            <template>unfiled$public/SupportCaseResponse</template>
+        </ruleEntry>
+    </assignmentRule>
+</AssignmentRules>

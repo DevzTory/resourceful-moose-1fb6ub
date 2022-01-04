@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Risk_Profile_Rating__c</fullName>
+    <externalId>false</externalId>
+    <label>Risk Profile Rating</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Low/Conservative Risk</fullName>
+                <default>false</default>
+                <label>Low/Conservative Risk</label>
+            </value>
+            <value>
+                <fullName>Medium/Moderate Risk</fullName>
+                <default>false</default>
+                <label>Medium/Moderate Risk</label>
+            </value>
+            <value>
+                <fullName>Medium - High Risk</fullName>
+                <default>false</default>
+                <label>Medium - High Risk</label>
+            </value>
+            <value>
+                <fullName>High Risk</fullName>
+                <default>false</default>
+                <label>High Risk</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

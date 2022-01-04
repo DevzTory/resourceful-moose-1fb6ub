@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cannot_change_old_value</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( ISCHANGED( Executive_Comments__c ) ,
+NOT( CONTAINS( Executive_Comments__c ,
+PRIORVALUE(Executive_Comments__c) ))) ||
+AND( ISBLANK(Executive_Comments__c) , NOT( ISBLANK( PRIORVALUE(Executive_Comments__c) ) ) )</errorConditionFormula>
+    <errorDisplayField>Executive_Comments__c</errorDisplayField>
+    <errorMessage>Only append to existing text.</errorMessage>
+</ValidationRule>

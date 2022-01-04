@@ -1,0 +1,30 @@
+<!--From Trailhead Aura Components Basics-->
+<aura:component>
+    <aura:attribute name="messages" type="List"
+        default="['You look nice today.',
+            'Great weather we\'re having.',
+            'How are you?']"/>
+
+    <h1>Hello Playground</h1>
+    <p>Silly fun with attributes and expressions.</p>
+
+    <h2>List Items</h2>
+    <p><c:helloMessage message="{!v.messages[0]}"/></p> <!--Pass data to the helloMessage.cmp-->
+    <p><c:helloMessage message="{!v.messages[1]}"/></p> <!--Pass data to the helloMessage.cmp-->
+    <p><c:helloMessage message="{!v.messages[2]}"/></p> <!--Pass data to the helloMessage.cmp-->
+
+    <h2>List Iteration</h2>
+    <!--Better way of iterating a list-->
+    <aura:iteration items="{!v.messages}" var="msg">
+        <p><c:helloMessage message="{!msg}"/></p>  <!--Pass data to the helloMessage.cmp-->
+    </aura:iteration>
+
+    <h2>Conditional Expressions and Global Value Providers</h2>
+    <aura:if isTrue="{!$Browser.isIPhone}"> <!--Check if browser is iPhone-->
+        <p><c:helloMessage message="{!v.messages[0]}"/></p>
+    <aura:set attribute="else">
+        <p><c:helloMessage message="{!v.messages[1]}"/></p>
+        </aura:set>
+    </aura:if>
+    <p> {!$Browser.formFactor} </p> <!--Display type of hardware the browser is running on-->
+</aura:component>
