@@ -14,6 +14,7 @@ private class TrailshredControllerTest {
             })
         };
 
+        
         Test.startTest();
 
         List<Trailshred_Setting__mdt> settings = TrailshredController.getSettings( 'Account' );
